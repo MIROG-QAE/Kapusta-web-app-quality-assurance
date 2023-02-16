@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Kapusta website registration module check</name>
+		<description>Checking rules for proper usage of the registration module of kapusta web app</description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Checking registration formula for no e-mail address or password</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page</content><expected>Testing environment website landing page opens. ![](index.php?/attachments/get/5a14cfc1-cfa1-4b6e-9b4c-3c51ff431a61) </expected></step>
+<step>
+<index>2</index><content>Hitting registration buttion with empty fields for e-mail and password</content><expected>Website informs about error and need to fill in the fields.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Checking registration formula for correct e-mail address or password</title>
+												<template>Test Case (Steps)</template>
+																<type>Accessibility</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating correct registration</content><expected>Landing page of testing environment register account correctly</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Checking registration formula for repeated e-mail address</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if e-mail address can be repeated</content><expected>Notification about &quot;taken e-mial address&quot; pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Checking registration formula for e-mail address with less than 10 characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if e-mail address can have less than 10 letters</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Checking registration formula for e-mail address with more than 63 characters</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if e-mail address can have more than 63 letters</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Checking registration formula for e-mail address without &quot;@&quot; character</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if e-mail address can provided without &quot;@&quot;</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Checking registration formula for e-mail address without &quot;.&quot; character after &quot;@&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if e-mail address can provided without &quot;.&quot; after &quot;@&quot;</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Checking registration formula for e-mail address with less than 2 characters before &quot;@&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if e-mail address can have less than 2 characters before the &quot;&quot;@&quot;&quot; </content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Checking registration formula for e-mail address with hyphen at the begining</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if the field may contain hyphen, at the beginning of email address</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Checking registration formula for e-mail address with hyphen at the end</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if the field may contain hyphen, at the end of email address</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Checking registration formula for e-mail address with hyphen in the middle</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if the field may contain hyphen in the middle of email address</content><expected>No information about invalid e-mail address</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>Checking registration formula for e-mail address with numbers, a period, a hyphen, and underscore</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if the username part of email address may contain numbers, a period, a hyphen, an underscore.</content><expected>No information about invalid e-mail address</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C17</id>
+				<title>Checking registration formula for e-mail address with other special signs like: „?”, „!”, „,”, „/”, etc..</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Validating if the username part of email address may contain other special signs like: &amp;bdquo;?&amp;rdquo;, &amp;bdquo;!&amp;rdquo;, &amp;bdquo;,&amp;rdquo;, &amp;bdquo;/&amp;rdquo;, etc..</content><expected>Message about invalid e-mail pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C18</id>
+				<title>Checking registration formula for password with letters and numbers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Entering correct e-mail address</content><expected>E-mail address was entered</expected></step>
+<step>
+<index>3</index><content>Validating if password may contain letters and numbers</content><expected>Account created with correct password and e-mail address</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C19</id>
+				<title>Checking registration formula for password with letters, numbers and special signs</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins – AdBlock
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering testing environment website landing page	</content><expected>Testing environment website landing page opens.</expected></step>
+<step>
+<index>2</index><content>Entering correct e-mail address</content><expected>E-mail address was entered</expected></step>
+<step>
+<index>3</index><content>Validating if password may contain any special signs</content><expected>Message about invalid password pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Kapusta website google account validation procedure check</name>
+		<description>Checking google account validation procedure for created account according to specification</description>
+						<cases>
+												<case>
+				<id>C2</id>
+				<title>Checking google account validation without a previously created account</title>
+												<template>Test Case (Steps)</template>
+																<type>Compatibility</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page</content><expected>Test environment website landing page loaded ![](index.php?/attachments/get/600628ba-bd7c-43da-b0bb-bc47dcee8de5) </expected></step>
+<step>
+<index>2</index><content>Clicking google button before registering gmail domain e-mail</content><expected>Test environment website landing page shows nothing or error notification</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C20</id>
+				<title>Checking google account validation with a previously created account</title>
+												<template>Test Case (Steps)</template>
+																<type>Compatibility</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page</content><expected>Test environment website landing page loaded ![](index.php?/attachments/get/44e10d67-e73d-42c6-b7f7-80b1dddec072) </expected></step>
+<step>
+<index>2</index><content>Clicking google button after registering google domain e-mail using this e-mail</content><expected>Test environment website landing page log ins with selected gmail domian e-mail address</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Kapusta website header specification check</name>
+		<description>Checking overall representation of Kapusta web app header after logging in according to specification</description>
+						<cases>
+												<case>
+				<id>C3</id>
+				<title>Checking header specification for charachetristic parts (logo, icon with first letter of user name)</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and enterin kapusta web app</expected></step>
+<step>
+<index>2</index><content>Searching for header charachetristic parts (logo, icon with first letter of user name)</content><expected>Charactersitic parts are found and are correct ( icon with letter)</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C21</id>
+				<title>Checking header specification for going back to main page after clicking logo of Kapusta web app</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and enterin kapusta web app</expected></step>
+<step>
+<index>2</index><content>Clicking on the logo of kapusta</content><expected>Going back to main page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C22</id>
+				<title>Checking header specification for logging out with log out button</title>
+												<template>Test Case (Steps)</template>
+																<type>Usability</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and enterin kapusta web app</expected></step>
+<step>
+<index>2</index><content>Clicking log out button</content><expected>Pop up window shows with ability to confirm or decline logging out proccess.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Kapusta website main page features check</name>
+		<description>Checking performance of main features of Kapusta wep app on the main page</description>
+						<cases>
+												<case>
+				<id>C4</id>
+				<title>Checking account balance in the main page with first logging in</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Checking, with first logging in if the account balance is 0 and notification about first enter to balance account pops up</content><expected>Account balance is 0 and notification pops up</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C23</id>
+				<title>Checking entering value for the account when the balance is 0</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering value of account balance (which is not negative or 0) when the balance is 0</content><expected>Value is entered </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C24</id>
+				<title>Checking entering negative number as a value for the account when the balance is 0</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering negative number as value of account balance (when the balance is 0</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C25</id>
+				<title>Checking entering letter as a value for the account when the balance is 0</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering letter as value of account balance  when the balance is 0</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C26</id>
+				<title>Checking entering 0 as a value for the account when the balance is 0</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering 0 as value of account balance  when the balance is 0</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C27</id>
+				<title>Checking entering special sign as a value for the account when the balance is 0</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering special sign as value of account balance  when the balance is 0</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C28</id>
+				<title>Checking entering  value of account balance  when the balance is not 0</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering value of account balance  when the balance is not 0</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C29</id>
+				<title>Checking accuracy of displayed date</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Checking if the displayed date is correct</content><expected>Displayed date is correct</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C30</id>
+				<title>Checking abilty to change displayed date to current one</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if date for transaction can be changed for current one </content><expected>Transaction date is changed </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C31</id>
+				<title>Checking abilty to change displayed date to past one</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if date for transaction can be changed for past one </content><expected>Transaction date is changed </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C32</id>
+				<title>Checking abilty to change displayed date to future one</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if date for transaction can be changed for future one </content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C33</id>
+				<title>Checking abilty to add transaction description including only letters and spaces</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if transaction description can be added (only letters and spaces)</content><expected>Transaction description is added</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C34</id>
+				<title>Checking abilty to add transaction description including letters and spaces together with numbers</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if transaction description can be added ( letters and spaces together with numbers)</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C61</id>
+				<title>Checking abilty to add transaction description including letters and spaces together with special signs</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if transaction description can be added ( letters and spaces together with special signs)</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C35</id>
+				<title>Checking abilty to add transaction description including ( letters and spaces) with less than 3 signs</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if transaction description can be added ( letters and spaces) with less than 3 signs</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C36</id>
+				<title>Checking abilty to add transaction description including ( letters and spaces) with morethan 20 signs</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if transaction description can be added ( letters and spaces, max. 20 signs) with more than 20 signs</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C37</id>
+				<title>Checking abilty to choose transaction name from drop-down list</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if transaction name (type) can be chosen from drop-down list</content><expected>Transaction name (type) is chosen from drop-down list</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C38</id>
+				<title>Checking abilty to provide amount with calculator icon starting from 1</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the amount can be provided to the field with calculator icon (min. value 1)</content><expected>Amount is provided.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C39</id>
+				<title>Checking abilty to provide amount with calculator icon with negative value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the amount can be provided to the field with calculator icon with negative value</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C40</id>
+				<title>Checking abilty to provide amount with calculator icon with 0 value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the amount can be provided to the field with calculator icon with 0 value</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C41</id>
+				<title>Checking abilty to provide amount with calculator icon with equation mark as value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the amount can be provided to the field with calculator icon with equation mark</content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C42</id>
+				<title>Checking action for approving income transaction with positive value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Choose income transaction name (type), add correct value and description </content><expected>name (type), value and description have been chosen and typed</expected></step>
+<step>
+<index>3</index><content>Check if after clicking &quot;ENTER&quot; for icome transaction:
+- the transaction is added
+- account balance increases 
+-An increase appear in the value of the transaction amount in the summary in the month in which the transaction was added
+
+</content><expected>After clicking &quot;ENTER&quot; for icome transaction, certain actions happen:
+-the transaction is added
+-account balance increases 
+-An increase appear in the value of the transaction amount in the summary in the month in which the transaction was added
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C43</id>
+				<title>Checking action for approving income transaction with negative value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Choose income transaction name (type), add incorrect value and description</content><expected>name (type), value and description have been chosen and typed</expected></step>
+<step>
+<index>3</index><content>Check if after clicking &quot;ENTER&quot; for icome transaction:
+- the transaction is added
+- account balance decreases 
+- a decrease appear in the value of the transaction amount in the summary in the month in which the transaction was added
+
+</content><expected>After clicking &quot;ENTER&quot; certain actions happen:
+-Web app shows error about violation of the rules
+-the transaction is not added
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C44</id>
+				<title>Checking action for approving expense transaction with negative value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Choose expense transaction name (type), add correct value and description</content><expected>name (type), value and description have been chosen and typed</expected></step>
+<step>
+<index>3</index><content>Check if after clicking &quot;ENTER&quot; for expense transaction:
+- the transaction is added
+- account balance decreases 
+- a decrease appear in the value of the transaction amount in the summary in the month in which the transaction was added
+
+</content><expected>After clicking &quot;ENTER&quot; certain actions happen:
+- the transaction is added
+- account balance decreases 
+-A decrease appear in the value of the transaction amount in the summary in the month in which the transaction was added
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C45</id>
+				<title>Checking action for approving expense transaction with positive value</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Choose expense transaction name (type), add incorrect value and description</content><expected>name (type), value and description have been chosen and typed</expected></step>
+<step>
+<index>3</index><content>Check if after clicking &quot;ENTER&quot; for expense transaction:
+- the transaction is added
+- account balance decreases 
+-A decrease in the value of the transaction amount in the summary in the month in which the transaction was added
+
+
+</content><expected>After clicking &quot;ENTER&quot; certain actions happen:
+-Web app shows error about violation of the rules
+-the transaction is not added
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C46</id>
+				<title>Checking working of clear button</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Provide correct value, correct description, date and transaction name (typ)</content><expected> value, description and transaction name (type), have been chosen</expected></step>
+<step>
+<index>3</index><content>Check if clicking on &quot;CLEAR&quot; button clears every information provided in the boxes, except date
+</content><expected>Information in the boxes is cleared, except date after clicking &quot;CLEAR&quot; button
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C47</id>
+				<title>Checking ability do delete transaction from the list</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Add any type of transaction with correct properties</content><expected>Tramsaction added</expected></step>
+<step>
+<index>3</index><content>Check if the transaction can be deleted from the list
+</content><expected>Transaction can is deleted from the list
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C48</id>
+				<title>Checking ability to change date in adding transaction field and deleting transaction from this date</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Add transaction with correct properties for the previous date</content><expected>Transaction added</expected></step>
+<step>
+<index>3</index><content>Check if the date in adding transaction field can be changed and:
+-list of transactions for this date shows up
+- all transactions for this date can be deleted
+</content><expected>The date in adding transaction field is changed and:
+-list of transactions for this date shows up
+- all transactions for this date are deleted
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C49</id>
+				<title>Checking ability to change date in adding transaction field and adding transaction to this date</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the date in adding transaction field can be changed and:
+- list of transactions for this date shows up
+- transaction can be added to this date
+
+</content><expected>The date in adding transaction field can be changed and:
+- list of transactions for this date shows up
+- transaction is added to this date
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C50</id>
+				<title>Checking modal window for confirmation of deleting a transaction</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if when deleting a transaction, a modal window appears with the option to confirm or cancel the action and confrmation works
+</content><expected>Modal window appears with the option to confirm or cancel the action and confrmation works
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C51</id>
+				<title>Checking modal window for cancelation of deleting a transaction</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if when deleting a transaction, a modal window appears with the option to confirm or cancel the action and cancelation works
+</content><expected>Modal window appears with the option to confirm or cancel the action and cancelation works
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C52</id>
+				<title>Checking effect of deleting income transaction to account balance</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if when deleting a transaction:
+
+- the value in the Balance field decreases by the value of the deleted transaction amount (in the case of an income transaction)
+- the value in the summary in the month from which the deleted transaction originates decreases by the amount of this transaction.
+
+</content><expected>When deleting a transaction:
+
+- the value in the Balance field decreases by the value of the deleted transaction amount (in the case of an income transaction)
+- the value in the summary in the month from which the deleted transaction originates decreases by the amount of this transaction.
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C62</id>
+				<title>Checking effect of deleting expense transaction to account balance</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if when deleting a transaction:
+
+- the value in the Balance field increases by the value of the deleted transaction amount (in the case of an expensetransaction)
+- the value in the summary in the month from which the deleted transaction originates decreases by the amount of this transaction.
+
+</content><expected>When deleting a transaction:
+
+- the value in the Balance field decreases by the value of the deleted transaction amount (in the case of an income transaction)
+- the value in the summary in the month from which the deleted transaction originates decreases by the amount of this transaction.
+
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C53</id>
+				<title>Checking switching between incomes and expenses transactions</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if switching between incomes and expenses Transactions works
+</content><expected>Switching between Incomes and expenses Transactions works
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C54</id>
+				<title>Checking appearance of scroll bar when exceeding number of transactions on window</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>180</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Add sufficient amount of transaxtion to exceed limit in the window</content><expected>transactions are added</expected></step>
+<step>
+<index>3</index><content>Check if when more transactions have been entered than fit in the list of transactions - a scroll bar appears on the right side and the keyboard arrows or scroll with the mouse/touchpad can be used to scroll through the list of transactions.
+</content><expected>A scroll bar appears on the right side and the keyboard arrows or scroll with the mouse/touchpad can be used to scroll through the list of transactions.
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C55</id>
+				<title>Checking appearance of summary for all incomes transactions from the beggining of to the year to current month</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the Summary with data of all income transactions for all months from the beginning of the year to the current month is shown
+</content><expected>The Summary with data of all income transactions for all months from the beginning of the year to the current month is shown
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C56</id>
+				<title>Checking appearance of summary for all expenses transactions from the beggining of to the year to current month</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>180</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Check if the the Summary with data of all expenses transactions for all months from the beginning of the year to the current month is shown
+</content><expected>The Summary with data of all expenses transactions for all months from the beginning of the year to the current month is shown
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Kapusta website reports page check</name>
+		<description>Checking procedures for reports page of kapusta wep app</description>
+						<cases>
+												<case>
+				<id>C5</id>
+				<title>Checking accessibility of main page button</title>
+												<template>Test Case (Steps)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering reports page</content><expected>Entered reports page</expected></step>
+<step>
+<index>3</index><content>Check if main page button is visible and accessible</content><expected>Main page button is visible, accessible and allows to return to main page</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C57</id>
+				<title>Checking possiblity to switch between current and previous months with paginator</title>
+												<template>Test Case (Steps)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering reports page</content><expected>Entered reports page</expected></step>
+<step>
+<index>3</index><content>Check if the paginator to switch between months with the ability to switch only between the current month and previous months is visible (also check if swithing between current and future month is possible)</content><expected>The paginator to switch between months with the ability to switch only between the current month and previous months is visible </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C58</id>
+				<title>Checking possiblity to switch between current and future months with paginator</title>
+												<template>Test Case (Steps)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering reports page</content><expected>Entered reports page</expected></step>
+<step>
+<index>3</index><content>Check if switching between current and future months is possible with the paginator </content><expected>Web app shows error about violation of the rules</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C59</id>
+				<title>Checking display of amounts of revenues and expenses spent for the selected month and a paginator to switch between types of revenue and expense transactions when switching between months</title>
+												<template>Test Case (Steps)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering reports page</content><expected>Entered reports page</expected></step>
+<step>
+<index>3</index><content>Check if when switching between months, the user can see:
+- amounts of revenues and expenses spent for the selected month;
+- a paginator to switch between types of revenue and expense transactions.
+</content><expected>when switching between months, the are seen:
+- amounts of revenues and expenses spent for the selected month;
+-a paginator to switch between types of revenue and expense transactions.
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+															<case>
+				<id>C60</id>
+				<title>Checking showing of chart for chosen transaction category in descdending order of the amounts of all products</title>
+												<template>Test Case (Steps)</template>
+																<type>Acceptance</type>
+																<priority>Medium</priority>
+																				<estimate>60</estimate>
+																								<references>none</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Testing environment - https://kapusta-qa.netlify.app/
+Internet Browser - Google Chrome Version 110.0.5481.78 (Official version) (64-bit)
+Add-ins - AdBlock
+
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Entering test environment website landing page and logging in with previousely created user account</content><expected>Successfull logging in and entering kapusta web app</expected></step>
+<step>
+<index>2</index><content>Entering reports page</content><expected>Entered reports page</expected></step>
+<step>
+<index>3</index><content>Check if clicking on any category of displayed transactions shows a chart for that category, which should be displayed in descending order of the amounts of all products for that category added in the selected month
+</content><expected>Clicking on any category of displayed transactions shows a chart for that category, which is be displayed in descending order of the amounts of all products for that category added in the selected month
+</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
